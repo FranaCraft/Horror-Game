@@ -7,13 +7,18 @@ match(func.que(2,["Alright!","ahh. i dont want to play this."],"some info")):
         time.sleep(5)
         match(func.que(2,["yea come outside and breath fresh air","nah lets stay at home and rest there"],"you have a very hard day in your job...i think it would be great to go outside")):
             case 1:
-                print("\okay then. good choice over the other...")
+                print("\nokay then. good choice over the other...")
                 time.sleep(4)
                 print("\nYour home is in the forest (typical for horror). You know a secret little path. You walk straight towards the path, you found it, and you walk on the path. But then you remember you forgot your phone at home and started seeing stars. Do you know what that means...")
                 match(func.que(1,["go back home"],"what do you do now")):
                     case 1:
-                        pass
-
+                        print("you turn around its almost pitch black you go faster. but you found out that there is crossroads")
+                        match(func.que(2,["Left (bigger path)","Right (smaller path)"],"where do you go")):
+                            case 1:
+                                print 
+                            case 2:
+                                print("okay you choose right")
+                                match
             case 2:
                 print("okay you survived you litle modnster does not like horor monster like me...")
     case 2:

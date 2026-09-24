@@ -1,7 +1,7 @@
 import func, time, os
 
 # func.que(2,["ahoj","add"])
-match(func.que(2,["Alright!","ahh. i dont want to play this."],"some info")):
+match(func.que(2,["Alright!","ahh. i dont want to play this."],"Hello Explorer, welcome to this ScArY TeRmInAl GaMe i hope you enjoy it \nnow PLEASE choose Alright elsewere it dont gonna end well")):
     case 1:
         print("okay... you are probably home. right... okay start the 'horor game'!")
         time.sleep(5)
@@ -18,9 +18,19 @@ match(func.que(2,["Alright!","ahh. i dont want to play this."],"some info")):
                                 print 
                             case 2:
                                 print("okay you choose right")
-                                match
+                                match(func.que(2,["run","go slow"],"do you wish to run(you got tired faster)")):
+                                    case 1:
+                                        print("you stated runing and you strarted hearing shushing behind so you run faster shushing got quieter")
+                                        match(func.que(2,["keep running","stop running"],"do you wish to keep running")):
+                                            case 1:
+                                                print("you keep runing. shushing behind you is still quiet.but it sudenly became louder and louder. so you run faster ")
+                                            case 2:
+                                    case 2:
+                                        pass
             case 2:
-                print("okay you survived you litle modnster does not like horor monster like me...")
+                print("okay you survived you litle monster that dont like horor monster like me...")
+                time.sleep(5)
+                print("\n\n\n\n\n ��ENDING ��� (��YOU�DIE�NOW�WANT�I�)��")
     case 2:
         match(func.que(2,["okay then. i want to play","i want to quit!"],"Are you sure?!")):
             case 1:

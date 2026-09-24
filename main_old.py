@@ -25,6 +25,7 @@ match(func.que(2,["Alright!","ahh. i dont want to play this."],"Hello Explorer, 
                                             case 1:
                                                 print("you keep runing. shushing behind you is still quiet.but it sudenly became louder and louder. so you run faster ")
                                             case 2:
+                                                pass
                                     case 2:
                                         pass
             case 2:

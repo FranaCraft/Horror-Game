@@ -1,4 +1,4 @@
-import time, curses
+import time, curses, keyboard
 fr = ""
 
 def que(numb=int,choice=list,inputt=str):
@@ -12,8 +12,6 @@ def que(numb=int,choice=list,inputt=str):
         time.sleep(2)
         urchoice = int(input(f"{inputt}: "))
     return  urchoice
-
-import curses
 
 
 def display_image(image):
@@ -43,6 +41,30 @@ def display_image(image):
         screen.getch()
 
     curses.wrapper(draw)
+
+def key(num:int):
+    if num == 4:
+        while True:
+            if keyboard.is_pressed("j"):
+                return 1
+    elif num == 3:
+        pass
+    else:
+        raise ValueError
+    
+    
+        
+    
+    
+    
+    
+    
+
+
+
+
+
+
 
 
 

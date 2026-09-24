@@ -1,4 +1,4 @@
-import func,time,res
+import Resources.func as func,time,Resources.res as res
 
 
     
@@ -6,4 +6,5 @@ import func,time,res
                                                     
 
 
-func.display_image(res.crossroadx4)
+# func.display_image(res.crossroadx4)
+func.key(5)

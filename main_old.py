@@ -1,4 +1,4 @@
-import func, time, os
+import Resources.func as func, time, os
 
 # func.que(2,["ahoj","add"])
 match(func.que(2,["Alright!","ahh. i dont want to play this."],"Hello Explorer, welcome to this ScArY TeRmInAl GaMe i hope you enjoy it \nnow PLEASE choose Alright elsewere it dont gonna end well")):

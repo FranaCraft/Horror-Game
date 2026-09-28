@@ -44,11 +44,17 @@ def display_image(image):
 
 def key(num:int):
     if num == 4:
-        while True:
-            if keyboard.is_pressed("j"):
-                return 1
+        if keyboard.on_press("j"):
+            return 1
+        elif keyboard.on_press("k"):
+            return 2
+        elif keyboard.on_press("l"):
+            return 3
     elif num == 3:
-        pass
+        if keyboard.on_press("j"):
+            return 1
+        elif keyboard.on_press("l"):
+            return 2
     else:
         raise ValueError
     

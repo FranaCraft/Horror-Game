@@ -17,6 +17,12 @@ sfx_channel = pygame.mixer.Channel(2)
 _active_sfx = None
 
 
+def stop_horror_background_music():
+    """Stop the looping CoolJune and Tanweraman background tracks."""
+    cooljune_channel.stop()
+    tanweraman_channel.stop()
+
+
 def play_horror_sfx(filename="freesound_community-horror-sfx-3-103708.mp3", volume=0.5):
     """Play one sound effect once; relative filenames are inside the sounds folder."""
     global _active_sfx

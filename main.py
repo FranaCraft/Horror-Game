@@ -36,6 +36,13 @@ for level in range(10):
         if random.randint(1,8) == 1:
             Resources.playsound.play_horror_sfx()
 
-
-    
-        
+print(outro)
+time.sleep(4)
+print(outro2)
+time.sleep(4)
+print("you are out of the drainage system and you are safe for now")
+time.sleep(4)
+Resources.playsound.stop_horror_background_music()
+print("Thanks for playing this game, hope you enjoyed it \n Credits: \n Game made by: FranaCraft \n Story by: Bára Votrubová, Ema podzemská, FranaCraft  \n Music: @tanweraman,@cooljune452 \n SFX: @freesound_community")
+time.sleep(10)
+quit()

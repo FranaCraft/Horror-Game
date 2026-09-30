@@ -1,26 +1,34 @@
-import Resources.func as func,time,Resources.res as res,random
-lines = []
+import Resources.func as func, Resources.res as res, random, Resources.playsound
+intro = "You are Traped in Drainage System and maybe..."
+intro2 = "...with you."
+intro3 = "and you need to get out of here, but quick! because water level is rising!"
+outro = "hey wait i see light!"
+outro2 = "finally light. last ladder and iam out"
+
+
 until_next_thng = 3 + random.randint(-2,5)
-for ch_counter in range(until_next_thng):
-    if random.randint(1,2) == 1:
-        func.display_image(res.crossroadx4)
-        match(func.key(4)):
-            case 1:
-                func.display_image(res.crossroadx4_left)
-            case 2:
-                func.display_image(res.crossroadx4_str)
-            case 3:
-                func.display_image(res.crossroadx4_right)
-            
+for level in range(10):
+    for ch_counter in range(until_next_thng):
+        if random.randint(1,2) == 1:
+            match(func.key(4, res.crossroadx4)):
+                case 1:
+                    func.display_image(res.crossroadx4_left)
+                case 2:
+                    func.display_image(res.crossroadx4_str)
+                case 3:
+                    func.display_image(res.crossroadx4_right)
+
                 
-    else:
-        func.display_image(res.crossroadx3)
-        match(func.key(3)):
-            case 1:
-                func.display_image(res.crossroadx3_left)
-            case 2:
-                func.display_image(res.crossroadx3_right)
+                    
+        else:
+            match(func.key(3, res.crossroadx3)):
+                case 1:
+                    func.display_image(res.crossroadx3_left)
+                case 2:
+                    func.display_image(res.crossroadx3_right)
+        if random.randint(1,8) == 1:
+            Resources.playsound.play_horror_sfx()
+
+
     
-    func.keyboard.wait("enter")
-    print("jej")
         

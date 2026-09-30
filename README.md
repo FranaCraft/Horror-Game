@@ -4,7 +4,16 @@ A short terminal horror game. You’re stuck in a drainage system, the water is 
 
 ## Play
 
-Open a terminal in this folder and run:
+Use Python 3.10 or newer. Open a terminal in this folder, install the dependencies, then start the game.
+
+On Windows:
+
+```powershell
+py -m pip install -r requirements.txt
+py main.py
+```
+
+On macOS or Linux:
 
 ```bash
 python3 -m pip install -r requirements.txt

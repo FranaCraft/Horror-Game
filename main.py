@@ -41,8 +41,8 @@ for level in range(4):
                     func.display_image(res.crossroadx3_right)
         if random.randint(1,8) == 1:
             Resources.playsound.play_horror_sfx()
-    line = (random.randint(0,9))
-    if line == 0 | 1:
+    line = random.randint(0, len(lines) - 1)
+    if line in (0, 1):
         print(lines[line])
         time.sleep(5)
         end()

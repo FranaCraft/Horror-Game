@@ -1,10 +1,17 @@
-import Resources.func as func, Resources.res as res, random, Resources.playsound
+
+import Resources.func as func, Resources.res as res, random, Resources.playsound, time
 intro = "You are Traped in Drainage System and maybe..."
 intro2 = "...with you."
 intro3 = "and you need to get out of here, but quick! because water level is rising!"
 outro = "hey wait i see light!"
 outro2 = "finally light. last ladder and iam out"
 
+print(intro)
+time.sleep(4)
+print(intro2)
+time.sleep(4)
+print(intro3)
+time.sleep(5)
 
 until_next_thng = 3 + random.randint(-2,5)
 for level in range(10):

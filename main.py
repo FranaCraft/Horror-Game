@@ -42,7 +42,7 @@ for level in range(4):
         if random.randint(1,8) == 1:
             Resources.playsound.play_horror_sfx()
     line = random.randint(0, len(lines) - 1)
-    if random.randint(1, 9) == 1:
+    if random.randint(1, 5) == 2:
         print(lines[random.randint(0,1)])
         time.sleep(5)
         end()

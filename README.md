@@ -4,7 +4,7 @@ A short terminal horror game. You’re stuck in a drainage system, the water is 
 
 ## Play
 
-Use Python 3.10 or newer. Open a terminal in this folder, install the dependencies, then start the game.
+Use Python 3.10–3.13. Open a terminal in this folder, install the dependencies, then start the game.
 
 On Windows:
 
